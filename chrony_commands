@@ -1,0 +1,4 @@
+# needs to be not running
+sudo systemctl stop chrony
+# force sync with server
+sudo chronyd -q 'server 192.168.5.1 iburst'
