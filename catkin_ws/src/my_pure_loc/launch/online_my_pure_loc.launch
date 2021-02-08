@@ -43,8 +43,8 @@
   <include file="$(find my_pure_loc)/launch/amcl_2.launch"> </include>
 
   <!--- Record a bag file, "required" argument will end all nodes when recording ends -->
-  <arg name="record_bag" default="true" />
+  <arg name="record_bag" default="false" />
   <node pkg="rosbag" type="record" name="record" output="screen" 
-    args="--duration=30 -o /home/guillem/data/bagfiles/amcl/expF1-C7 /amcl_pose" 
+    args="--duration=30 -o $(find my_pure_loc)/data/name /amcl_pose" 
     required="true" if="$(arg record_bag)" />
 </launch>
