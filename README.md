@@ -20,6 +20,6 @@ This repo contains the ROS packages and files need to run automatic localization
 # Other
 
 * chrony_commands
-  * Containes chrony coomands to force time sync. between machines. A time offset between the node and the master will result in localization failure or errors.
+  * Contains the chrony commands to force time sync. between machines. A time offset between the node and the master will result in localization failure or errors.
 * magick
   * ImageMagick is a free and open-source cross-platform software suite for displaying, creating, converting, modifying, and editing raster images. Useful for converting .png (etc.) map images to .pgm format used by ROS and the Map Server package.
